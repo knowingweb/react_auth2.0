@@ -32,7 +32,7 @@ export default class ExampleComponent extends Component {
 
 
 
-const FriendlyRoutes = ({ component: Component, ...rest }) => {
+export const FriendlyRoutes = ({ component: Component, ...rest }) => {
   let element
   //if(fakeAuth.isAuthenticated()){
     element = (<Component {...rest} />)

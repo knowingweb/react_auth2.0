@@ -8,9 +8,13 @@ import PropTypes from 'prop-types'
 //import { connect } from 'react-redux'
 // import PropTypes from 'prop-types'
 // import RefreshTokenPage from '../containers/RefreshTokenPageContainer'
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom'
+//import StandardFormLogin from 'StandardFormLogin/StandardFormLogin'
 
 import styles from './styles.css'
+
+
+//export StandardFormLogin
 
 export default class ExampleComponent extends Component {
   static propTypes = {
@@ -30,6 +34,25 @@ export default class ExampleComponent extends Component {
   }
 }
 
+
+
+export default class Button extends Component {
+  static propTypes = {
+    text: PropTypes.string
+  }
+
+  render() {
+    const {
+      text
+    } = this.props
+
+    return (
+      <div className={styles.test}>
+        Example Component: {text}
+      </div>
+    )
+  }
+}
 
 
 export const FriendlyRoutes = ({ component: Component, ...rest }) => {

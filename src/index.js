@@ -5,7 +5,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 //import { fakeAuth } from '../http/fakeAuth'
-import React from 'react'
 //import { connect } from 'react-redux'
 // import PropTypes from 'prop-types'
 // import RefreshTokenPage from '../containers/RefreshTokenPageContainer'

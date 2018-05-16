@@ -1,0 +1,8 @@
+{
+  "short_name": "callcenter2_react_components",
+  "name": "callcenter2_react_components",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

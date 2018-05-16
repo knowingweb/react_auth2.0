@@ -24,3 +24,21 @@ export default class ExampleComponent extends Component {
     )
   }
 }
+
+export class David extends Component {
+  static propTypes = {
+    text: PropTypes.string
+  }
+
+  render() {
+    const {
+      text
+    } = this.props
+
+    return (
+      <div className={styles.test}>
+        Soy David y aca iestoy creando una libreria {text}
+      </div>
+    )
+  }
+}

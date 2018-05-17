@@ -36,7 +36,7 @@ export default class ExampleComponent extends Component {
 
 
 
-export default class Button extends Component {
+export class Button extends Component {
   static propTypes = {
     text: PropTypes.string
   }

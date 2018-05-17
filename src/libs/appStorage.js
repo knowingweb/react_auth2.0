@@ -1,4 +1,4 @@
-import * as config from "./config"
+//import * as process.env from "./process.env"
 
 let localStorage
 if (global.process && process.env.NODE_ENV === 'test') {
@@ -20,7 +20,7 @@ export function getDataStorage(){
   if( loggedIn() === false )
     return  undefined
 
-  const serializedState = localStorage.getItem(`${config.PREFIX_SESSION_KEYS}.auth`)
+  const serializedState = localStorage.getItem(`${process.env.PREFIX_SESSION_KEYS}.auth`)
   return JSON.parse(serializedState)
 }
 
@@ -33,9 +33,9 @@ export function setSessionInfoData(data){
 }
 
 export function setDataStorage(data){
-  sessionStorage.removeItem(`${config.PREFIX_SESSION_KEYS}.auth`)
+  sessionStorage.removeItem(`${process.env.PREFIX_SESSION_KEYS}.auth`)
   const serializedState = JSON.stringify(data)
-  sessionStorage.setItem(`${config.PREFIX_SESSION_KEYS}.auth`, serializedState)
+  sessionStorage.setItem(`${process.env.PREFIX_SESSION_KEYS}.auth`, serializedState)
   return true
 }
 export const getBeginAt = () => {
@@ -66,7 +66,7 @@ export const getFinishAt = () => {
 
 
 export function loggedIn() {
-  const serializedState = localStorage.getItem(`${config.PREFIX_SESSION_KEYS}.auth`)
+  const serializedState = localStorage.getItem(`${process.env.PREFIX_SESSION_KEYS}.auth`)
   if( serializedState === null )
     return false
   else
@@ -80,7 +80,7 @@ export function getHeaders(){
   return headers
 }
 export const clearSignData = (data) => {
-  localStorage.removeItem(`${config.PREFIX_SESSION_KEYS}.auth`)
+  localStorage.removeItem(`${process.env.PREFIX_SESSION_KEYS}.auth`)
 }
 export function fullLoggedIn() {
   if(loggedIn() === true){

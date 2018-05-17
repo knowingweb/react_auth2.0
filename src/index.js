@@ -12,6 +12,7 @@ import { Route, Redirect } from 'react-router-dom'
 //import StandardFormLogin from 'StandardFormLogin/StandardFormLogin'
 
 import styles from './styles.css'
+export onLoginSuccessfull from './onLoginSuccessfull'
 
 
 //export StandardFormLogin

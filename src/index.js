@@ -13,7 +13,9 @@ import { Route, Redirect } from 'react-router-dom'
 
 import styles from './styles.css'
 //export Onloginsuccessfull from './onLoginSuccessfull'
-export * as appStorage from './libs/appStorage'
+import * as appStorage from './libs/appStorage'
+export appStorage
+//export * as appStorage from './libs/appStorage'
 
 
 export function onLoginSuccessfull(response, history) {

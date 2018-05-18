@@ -8,8 +8,11 @@ import * as appStorage from './libs/appStorage'
 
 //eslint-disable-next-line
 export default function* onLoginSuccessfull(response, history) {
-  appStorage.setSessionInfoData(response.data)
-  history.default.push(`/${APP_PREFIX}/app/home`)
+  //appStorage.setSessionInfoData(response.data)
+  //history.default.push(`/${APP_PREFIX}/app/home`)
+  alert("Hola soy el listener")
+  console.log(history)
+  console.log(response)
 }
 
 

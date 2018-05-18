@@ -15,6 +15,7 @@ import styles from './styles.css'
 //export Onloginsuccessfull from './onLoginSuccessfull'
 import * as appStorage from './libs/appStorage'
 export * as appStore from './libs/appStorage'
+export FriendlyRoutes from './FriendlyRoutes'
 
 const APP_PREFIX = process.env.REACT_APP_PREFIX || `default`
 
@@ -68,7 +69,7 @@ export class Button extends Component {
 }
 
 
-export const FriendlyRoutes = ({ component: Component, ...rest }) => {
+  /*export const FriendlyRoutes = ({ component: Component, ...rest }) => {
   let element
   //if(fakeAuth.isAuthenticated()){
     element = (<Component {...rest} />)
@@ -77,7 +78,7 @@ export const FriendlyRoutes = ({ component: Component, ...rest }) => {
   return (
     <Route {...rest} render={ (props) => (element)} />
   )
-}
+}*/
 
 /*FriendlyRoutes.propTypes = {
   //accessState: PropTypes.bool.isRequired

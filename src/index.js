@@ -15,6 +15,7 @@ import styles from './styles.css'
 //export Onloginsuccessfull from './onLoginSuccessfull'
 import * as appStorage from './libs/appStorage'
 export * as appStore from './libs/appStorage'
+export * as Request from './Request'
 export FriendlyRoutes from './FriendlyRoutes'
 
 const APP_PREFIX = process.env.REACT_APP_PREFIX || `default`

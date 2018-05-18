@@ -2,21 +2,14 @@
  * @class ExampleComponent
  */
 
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { Route, Redirect } from 'react-router-dom';
+import * as appStorage from './libs/appStorage'
+import * as history from '../../history/browserHistory'
+import { APP_PREFIX } from '../../services/config'
 
-export default class onLoginSuccessfull extends Component {
-
-  render() {
-    console.log(process.env)
-    return (
-      <div>
-        onlogin successfull
-      </div>
-    )
-  }
+//eslint-disable-next-line
+export default function* onLoginSuccessfull(response) {
+  appStorage.setSessionInfoData(response.data)
+  history.default.push(`/${APP_PREFIX}/app/home`)
 }
-
 
 

@@ -1,16 +1,4 @@
 {
   "presets": ["react", "es2015"],
   "plugins": ["transform-class-properties", "transform-decorators-legacy"]
-
-  "presets": [
-    ["env", {
-      "modules": false
-    }],
-    "stage-0",
-    "react"
-  ]
-  ,
-  "plugins": [
-    "external-helpers"
-  ]
 }

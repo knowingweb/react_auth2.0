@@ -17,7 +17,7 @@ Request.interceptors.request.use(async (config) => {
     if(!appStorage.fullLoggedIn() && !isOlder){
       isOlder = true
       try{
-        const response = await new Promise((resolve, reject) => {
+        /*const response = await new Promise((resolve, reject) => {
           Request.post("/oauth/token",
             {
               'grant_type': 'refresh_token',
@@ -32,7 +32,7 @@ Request.interceptors.request.use(async (config) => {
             reject(e)
           })
         })
-        appStorage.setSessionInfoData(response.data)
+        appStorage.setSessionInfoData(response.data)*/
       }catch(ex){
 
       }

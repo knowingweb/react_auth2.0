@@ -8,7 +8,7 @@ if (global.process && process.env.NODE_ENV === 'test') {
 }
 
 
-const PREFIX_SESSION_KEYS = process.env.PREFIX_SESSION_KEYS || `default`
+const PREFIX_SESSION_KEYS = process.env.REACT_APP_PREFIX_SESSION_KEYS || `default`
 
 
 export const getRefreshToken = () => {

@@ -16,7 +16,7 @@ import styles from './styles.css'
 import * as appStorage from './libs/appStorage'
 export * as appStore from './libs/appStorage'
 
-const APP_PREFIX = process.env.APP_PREFIX || `default`
+const APP_PREFIX = process.env.REACT_APP_PREFIX || `default`
 
 
 export function onLoginSuccessfull(response, history) {

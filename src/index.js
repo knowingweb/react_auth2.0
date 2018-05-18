@@ -16,7 +16,7 @@ import styles from './styles.css'
 export * as appStore from './libs/appStorage'
 
 
-export function* onLoginSuccessfull(response, history) {
+export function onLoginSuccessfull(response, history) {
   //appStorage.setSessionInfoData(response.data)
   //history.default.push(`/${APP_PREFIX}/app/home`)
   alert("Hola soy el listener")

@@ -17,11 +17,11 @@ export * as appStore from './libs/appStorage'
 
 
 export function onLoginSuccessfull(response, history) {
-  //appStorage.setSessionInfoData(response.data)
-  //history.default.push(`/${APP_PREFIX}/app/home`)
-  alert("Hola soy el listener")
-  console.log(history)
-  console.log(response)
+  appStorage.setSessionInfoData(response.data)
+  history.default.push(`/${APP_PREFIX}/app/home`)
+  //alert("Hola soy el listener")
+  //console.log(history)
+  //console.log(response)
 }
 
 //export StandardFormLogin

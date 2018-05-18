@@ -1,11 +1,6 @@
 {
-  "presets": [
-    [
-      "es2015",
-      {
-        "modules": false
-      }
-    ]
-  ],
-  "plugins": ["external-helpers"]
+  "presets": ["babel-preset-es2015-loose-rollup"],
+  "plugins": [
+    "external-helpers"
+  ]
 }

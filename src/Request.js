@@ -12,12 +12,12 @@ let isOlder = false
 let refreshSubscribers = []
 
 //Request.defaults.headers.common['Authorization'] = 'Bearer ' + sessionStorage.getAccessToken
-Request.interceptors.request.use(async (config) => {
+  /*Request.interceptors.request.use(async (config) => {
   if(appStorage.loggedIn()){
     if(!appStorage.fullLoggedIn() && !isOlder){
       isOlder = true
       try{
-        /*const response = await new Promise((resolve, reject) => {
+        const response = await new Promise((resolve, reject) => {
           Request.post("/oauth/token",
             {
               'grant_type': 'refresh_token',
@@ -32,7 +32,7 @@ Request.interceptors.request.use(async (config) => {
             reject(e)
           })
         })
-        appStorage.setSessionInfoData(response.data)*/
+        appStorage.setSessionInfoData(response.data)
       }catch(ex){
 
       }
@@ -42,7 +42,7 @@ Request.interceptors.request.use(async (config) => {
   const headers = appStorage.getHeaders()
   config.headers["Authorization"] = headers["Authorization"]
   return config
-})
+})*/
 
 Request.interceptors.response.use(response => {
   return response;

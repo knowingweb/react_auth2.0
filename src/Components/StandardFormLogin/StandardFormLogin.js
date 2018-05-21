@@ -7,7 +7,7 @@ import LabelCmp from '../Elements/LabelCmp/LabelCmp'
 
 import MicroIcon from 'react-microvoz-icons'
 
-import './StandardFormLogin.css'
+import styles from './StandardFormLogin.css'
 
 class FormLogin extends Component {
   contructor(props){
@@ -28,7 +28,7 @@ class FormLogin extends Component {
     const { username, password } = this.state || { username: "", password: "" }
 
     return (
-      <div className="FormLogin">
+      <div className= { styles.FormLogin }>
         <span className="FormLogin__title">Login</span>
         <div className="FormLogin__content">
           <form action="" className="FormLogin__form">

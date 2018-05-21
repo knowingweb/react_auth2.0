@@ -26,6 +26,8 @@ class FormLogin extends Component {
   }
   render() {
     const { username, password } = this.state || { username: "", password: "" }
+    console.log(username, password)
+    console.log(this.state)
 
     return (
       <div className= { styles.FormLogin }>

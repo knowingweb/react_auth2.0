@@ -16,6 +16,7 @@ export LoginScreen from './LoginScreen/LoginScreen'
 export StandardFormLogin from './Components/StandardFormLogin/StandardFormLogin'
 
 import './Components/StandardFormLogin/StandardFormLogin.css'
+import styles from './styles.css'
 
 
 

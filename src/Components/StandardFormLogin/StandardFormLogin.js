@@ -29,15 +29,15 @@ class FormLogin extends Component {
 
     return (
       <div className= { styles.FormLogin }>
-        <span className="FormLogin__title">Login</span>
+        <span className= { styles.FormLogin__title} >Login</span>
         <div className="FormLogin__content">
           <form action="" className="FormLogin__form">
 
-            <div className="FormLogin__input-container">
-              <div className="FormLogin__icon-container">
-                <MicroIcon name="user" alt="username" className="FormLogin__input-icon" size="21px" />
+            <div className={ styles.FormLogin__input-container }>
+              <div className= { styles.FormLogin__icon-container}>
+                <MicroIcon name="user" alt="username" className={ styles.FormLogin__input-icon} size="21px" />
               </div>
-              <div className="FormLogin__input-group">
+              <div className={ styles.FormLogin__input-group }>
                 <LabelCmp title="Usuario"/>
                 <InputCmp type="text" placeholder="" id = "username" value={username} onChange={this.onInputChange.bind(this)} />
               </div>

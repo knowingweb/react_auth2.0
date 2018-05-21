@@ -25,7 +25,7 @@ export default class LoginPage extends Component {
         <Row>
           <Col>
             <NavLink to="/" className= { styles.LoginPage__logo }>
-              <img src={logoAdmin} alt="logo admin" className="LoginPage__logo__image"/>
+              <img src={logoAdmin} alt="logo admin" className={ styles.LoginPage__logo__image }/>
             </NavLink>
           </Col>
         </Row>

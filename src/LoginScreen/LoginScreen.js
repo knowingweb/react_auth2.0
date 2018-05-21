@@ -6,7 +6,7 @@ import {
   NavLink,
 } from 'reactstrap';
 
-import logoAdmin from '../../img/microvoz-admin-logo.svg';
+import logoAdmin from '../img/microvoz-admin-logo.svg';
 
 //import FormLogin from '../Elements/FormLogin/FormLogin'
 import HeaderCmp from "./HeaderCmp/HeaderCmp";

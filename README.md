@@ -34,4 +34,6 @@ MIT © [microvoz](https://github.com/microvoz)
 
 tener en cuenta que esta inabilidata el request interceptor
 
+npm install --only=dev
+
 

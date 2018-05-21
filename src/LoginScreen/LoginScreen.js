@@ -11,12 +11,12 @@ import logoAdmin from '../img/microvoz-admin-logo.svg';
 //import FormLogin from '../Elements/FormLogin/FormLogin'
 import HeaderCmp from "./HeaderCmp/HeaderCmp";
 
-import './LoginScreen.css'
+import styles from './LoginScreen.css'
 
 export default class LoginPage extends Component {
   render() {
     return (
-      <Container fluid={true} className="LoginPage">
+      <Container fluid={true} className={ styles.LoginPage }>
         <Row>
           <Col>
             <HeaderCmp />
@@ -24,7 +24,7 @@ export default class LoginPage extends Component {
         </Row>
         <Row>
           <Col>
-            <NavLink to="/" className="LoginPage__logo">
+            <NavLink to="/" className= { styles.LoginPage__logo }>
               <img src={logoAdmin} alt="logo admin" className="LoginPage__logo__image"/>
             </NavLink>
           </Col>

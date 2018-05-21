@@ -31,7 +31,7 @@ class FormLogin extends Component {
       <div className= { styles.FormLogin }>
         <span className= { styles.FormLogin__title} >Login</span>
         <div className={ styles["FormLogin__content"] }>
-          <form action="" className={ styles["FormLogin__form"] }>
+          <form action="" className={ styles["FormLogin__form"] } onSubmit={this.onSubmit.bind(this)}>
 
             <div className={ styles['FormLogin__input-container'] }>
               <div className= { styles['FormLogin__icon-container'] }>
@@ -54,10 +54,7 @@ class FormLogin extends Component {
             </div>
 
             <div className={ styles["FormLogin__actions-container"] }>
-              <ButtonCmp
-                onClick={this.onSubmit.bind(this)}
-                title="Ingresar"
-              />
+              <ButtonCmp title="Ingresar" />
             </div>
           </form>
         </div>

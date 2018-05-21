@@ -13,9 +13,9 @@ export default class HeaderCmp extends Component {
     return (
       <div className={ styles.HeaderCmp }>
         <Nav className= { styles.HeaderCmp__nav }>
-          <NavItem className={ styles.HeaderCmp__nav-items }>
+          <NavItem className={ styles['HeaderCmp__nav-items'] }>
             <NavLink href="http://www.microvoz.com"
-              className={ styles.HeaderCmp__nav-link} > www.microvoz.com
+              className={ styles['HeaderCmp__nav-link'] } > www.microvoz.com
             </NavLink>
           </NavItem>
         </Nav>

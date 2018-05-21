@@ -11,7 +11,12 @@ let isRefreshing = false
 let isOlder = false
 let refreshSubscribers = []
 
+const headers = appStorage.getHeaders()
+//config.headers["Authorization"] = headers["Authorization"]
+Request.defaults.headers.common['Authorization'] = headers["Authorization"]
+
 //Request.defaults.headers.common['Authorization'] = 'Bearer ' + sessionStorage.getAccessToken
+
   /*Request.interceptors.request.use(async (config) => {
   if(appStorage.loggedIn()){
     if(!appStorage.fullLoggedIn() && !isOlder){

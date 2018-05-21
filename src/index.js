@@ -15,6 +15,7 @@ export FriendlyRoutes from './FriendlyRoutes'
 export LoginScreen from './LoginScreen/LoginScreen'
 export StandardFormLogin from './Components/StandardFormLogin/StandardFormLogin'
 
+import './Components/StandardFormLogin/StandardFormLogin.css'
 
 
 

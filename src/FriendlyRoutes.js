@@ -6,6 +6,7 @@ import { fakeAuth } from './libs/fakeAuth'
 
 const FriendlyRoutes = ({ component: Component, ...rest }) => {
   let element
+    console.log("david test")
   if(fakeAuth.isAuthenticated()){
     //If our app is autenticate and the client call path oauth/login we going to
     //redirect to home

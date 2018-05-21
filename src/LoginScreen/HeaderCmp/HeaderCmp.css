@@ -1,0 +1,23 @@
+.HeaderCmp__nav {
+  align-content: center;
+  background: var(--theme-yellow);
+  justify-content: flex-end;
+  height: 45px;
+  padding: 0 5px;
+}
+
+.HeaderCmp__nav-link {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.HeaderCmp__nav-link,
+.HeaderCmp__nav-link:hover {
+  color: var(--theme-white);
+}
+
+.HeaderCmp__nav-link:hover {
+  background: var(--theme-yellow-light)!important;
+}
+
+

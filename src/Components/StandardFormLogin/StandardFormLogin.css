@@ -1,0 +1,47 @@
+.FormLogin {
+  margin: auto;
+  padding-top: 150px;
+  width: 261px;
+}
+
+.FormLogin__title {
+  color: var(--theme-secondary-gray);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.FormLogin__content {
+  border-top: 1px solid var(--theme-secondary-gray-dark);
+  border-bottom: 1px solid var(--theme-secondary-gray-dark);
+  margin-top: 2px;
+}
+
+.FormLogin__form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+.FormLogin__input-icon {
+  color: var(--theme-white);
+  width: 20px;
+}
+
+.FormLogin__input-container {
+  display: flex;
+}
+
+.FormLogin__input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.FormLogin__actions-container {
+  padding-top: 10px;
+  align-self: flex-end;
+}
+
+

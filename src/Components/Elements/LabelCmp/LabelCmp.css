@@ -1,0 +1,6 @@
+.LabelCmp {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--theme-secondary-gray);
+  margin-bottom: 2px;
+}

@@ -1,0 +1,16 @@
+.LoginPage {
+  height: 100%;
+  padding: 0;
+  background: var(--theme-primary-gray);
+  overflow: hidden;
+}
+
+.LoginPage__logo {
+  display: inline-block;
+  margin-top: 18px;
+  margin-left: 25px;
+}
+
+.LoginPage__logo__image {
+  width: 130px;
+}

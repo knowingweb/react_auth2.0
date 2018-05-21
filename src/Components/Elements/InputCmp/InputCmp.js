@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import './InputCmp.css';
+import styles from './InputCmp.css';
 
 function InputCmp(props) {
   const {
@@ -17,7 +17,7 @@ function InputCmp(props) {
 
   return (
     <input
-      className={["InputCmp", className].join(' ')}
+      className={[ styles.InputCmp, className].join(' ')}
       type={type}
       id={id}
       disabled={disabled}

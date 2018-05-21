@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import './LabelCmp.css';
+import styles from './LabelCmp.css';
 
 function LabelCmp(props) {
   const {
@@ -12,7 +12,7 @@ function LabelCmp(props) {
 
   return (
     <label
-      className={["LabelCmp", className].join(' ')}
+      className={[ styles.LabelCmp, className].join(' ')}
       style={style}
     >
       {title}

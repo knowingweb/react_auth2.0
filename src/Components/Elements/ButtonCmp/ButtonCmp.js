@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Button } from 'reactstrap';
 
-import './ButtonCmp.css';
+import styles from './ButtonCmp.css';
 
 function ButtonCmp(props) {
   const {
@@ -15,7 +15,7 @@ function ButtonCmp(props) {
 
   return (
     <Button
-      className={["ButtonCmp", className].join(' ')}
+      className={[styles.ButtonCmp, className].join(' ')}
       onClick={onClick}
       disabled={disabled}
       style={style}

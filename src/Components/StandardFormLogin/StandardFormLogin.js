@@ -30,8 +30,8 @@ class FormLogin extends Component {
     return (
       <div className= { styles.FormLogin }>
         <span className= { styles.FormLogin__title} >Login</span>
-        <div className="FormLogin__content">
-          <form action="" className="FormLogin__form">
+        <div className={ styles["FormLogin__content"] }>
+          <form action="" className={ styles["FormLogin__form"] }>
 
             <div className={ styles['FormLogin__input-container'] }>
               <div className= { styles['FormLogin__icon-container'] }>
@@ -43,17 +43,17 @@ class FormLogin extends Component {
               </div>
             </div>
 
-            <div className="FormLogin__input-container">
-              <div className="FormLogin__icon-container">
-                <MicroIcon name="closed" alt="username" className="FormLogin__input-icon" size="19px" />
+            <div className={ styles["FormLogin__input-container"] }>
+              <div className={ styles["FormLogin__icon-container"] }>
+                <MicroIcon name="closed" alt="username" className={ styles["FormLogin__input-icon"] } size="19px" />
               </div>
-              <div className="FormLogin__input-group">
+              <div className={ styles["FormLogin__input-group"] }>
                 <LabelCmp title="Clave"/>
                 <InputCmp type="password" placeholder="" id="password" value={password} onChange={this.onInputChange.bind(this)} />
               </div>
             </div>
 
-            <div className="FormLogin__actions-container">
+            <div className={ styles["FormLogin__actions-container"] }>
               <ButtonCmp
                 onClick={this.onSubmit.bind(this)}
                 title="Ingresar"

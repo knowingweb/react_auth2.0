@@ -9,9 +9,10 @@ function ButtonCmp(props) {
     onClick,
     disabled,
     className,
-    style,
-    title
-  } = props;
+    style
+  } = props
+
+  const title = props.title || props.children
 
   return (
     <Button
@@ -33,4 +34,4 @@ ButtonCmp.propTypes = {
   style: PropTypes.object
 };
 
-export default ButtonCmp;
+export default ButtonCmp

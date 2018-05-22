@@ -1,6 +1,6 @@
 {
   "name": "callcenter2_react_components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "microvoz",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
-    "reactstrap": "^6.0.1"
+    "reactstrap": "github:reactstrap/reactstrap"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",

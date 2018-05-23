@@ -1,0 +1,70 @@
+.HeaderCmp__nav {
+  align-content: center;
+  background: var(--theme-yellow);
+  justify-content: space-between;
+  height: 45px;
+  padding: 0 5px;
+}
+
+.HeaderCmp__nav-link {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.HeaderCmp__nav-link,
+.HeaderCmp__nav-link:hover {
+  color: var(--theme-white);
+}
+
+.HeaderCmp__nav-link:hover {
+  background: var(--theme-yellow-light)!important;
+}
+
+.HeaderCmp__nav__sections {
+  display: flex;
+  align-items: center;
+}
+
+.HeaderCmp__avatar {
+  border-radius: 50%;
+}
+
+.HeaderCmp__nav-items {
+  position: relative;
+  margin-right: 10px;
+}
+
+.HeaderCmp__nav .badge.badge-danger {
+  position: absolute;
+  top: 5px;
+  right: -2px;
+}
+
+.HeaderCmp__username {
+  font-weight: 200;
+}
+
+.HeaderCmp__time {
+  display: flex;
+  align-items: center;
+}
+
+.HeaderCmp__time svg {
+  margin-right: 8px;
+}
+
+
+.HomePage .HeaderCmp__nav {
+  height: 40px;
+  justify-content: space-between;
+}
+
+.HeaderCmp__logo {
+  margin: 0 10px;
+  height: 18px;
+  width: 92px;
+}
+
+.HeaderCmp__nav-items.nav-item {
+  font-size: 11px;
+}

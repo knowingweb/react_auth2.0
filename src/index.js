@@ -15,7 +15,7 @@ export FriendlyRoutes from './FriendlyRoutes'
 export GuestRoutes from './GuestRoutes'
 export LoginScreen from './LoginScreen/LoginScreen'
 export StandardFormLogin from './Components/StandardFormLogin/StandardFormLogin'
-export HeaderCmp from './LoginScreen/HeaderCmp/HeaderCmp'
+export HeaderCmp from './Components/HeaderCmp/HeaderCmp'
 
 import './Components/StandardFormLogin/StandardFormLogin.css'
 import styles from './styles.css'

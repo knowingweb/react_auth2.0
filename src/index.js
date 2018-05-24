@@ -16,6 +16,7 @@ export GuestRoutes from './GuestRoutes'
 export LoginScreen from './LoginScreen/LoginScreen'
 export StandardFormLogin from './Components/StandardFormLogin/StandardFormLogin'
 export HeaderCmp from './LoginScreen/HeaderCmp/HeaderCmp'
+export ButtonCmp from './Components/Elements/ButtonCmp/ButtonCmp'
 
 import './Components/StandardFormLogin/StandardFormLogin.css'
 import styles from './styles.css'

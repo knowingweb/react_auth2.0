@@ -17,6 +17,7 @@ export LoginScreen from './LoginScreen/LoginScreen'
 export StandardFormLogin from './Components/StandardFormLogin/StandardFormLogin'
 export HeaderCmp from './LoginScreen/HeaderCmp/HeaderCmp'
 export ButtonCmp from './Components/Elements/ButtonCmp/ButtonCmp'
+//export HeaderCmp from './Components/HeaderCmp/HeaderCmp'
 
 import './Components/StandardFormLogin/StandardFormLogin.css'
 import styles from './styles.css'

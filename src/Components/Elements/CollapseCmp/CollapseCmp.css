@@ -1,22 +1,18 @@
-.CollapseCmp {}
+.CollapseCmp,
+.CollapseCmp--secondary {
+  display: flex;
+  flex-direction: column;
+  min-height: 29px;
+}
 
 .CollapseCmp--open {}
 
-button.CollapseCmp__btn {
-  width: 100%;
-  border-radius: 0;
-  padding: 3px 25px;
-  text-align: left;
-  font-size: 11px;
-  font-weight: 300;
-  position: relative;
-}
-
 .CollapseCmp__btn {
+  position: relative;
   padding: 0;
   padding-left: 25px;
   border-radius: 0;
-  width: 100%;
+  display: flex;
   font-size: 11px;
   font-weight: 200;
   height: 29px;
@@ -41,6 +37,11 @@ button.CollapseCmp__btn {
   color: var(--theme-yellow);
 }
 
+.CollapseCmp--secondary > .CollapseCmp__btn {
+  padding-left: 0;
+  background: var(--theme-secondary-black-dark);
+}
+
 .CollapseCmp__arrow {
   transition: all 0.3s ease-in;
   position: absolute;
@@ -52,4 +53,21 @@ button.CollapseCmp__btn {
 
 .CollapseCmp--open .CollapseCmp__arrow {
   transform: rotate(90deg);
+}
+
+.CollapseCmp ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.CollapseCmp li {
+  width: 100%;
+  background: var(--theme-secondary-black-dark);
+  color: var(--theme-secondary-gray);
+  min-height: 29px;
+  line-height: 27px;
+  font-size: 11px;
+  font-weight: 200;
+  display: list-item;
 }

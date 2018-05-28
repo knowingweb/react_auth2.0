@@ -17,9 +17,13 @@ class CollapseCmp extends Component {
   }
 
   render() {
-    const { title, children, className } = this.props;
+    const { title, children, className, type } = this.props;
     return (
-      <div className={[styles.CollapseCmp, (this.state.collapse ? styles["CollapseCmp--open"] : ""), className].join(" ")}>
+      <div className={[styles.CollapseCmp,
+      (this.state.collapse ? styles["CollapseCmp--open"] : ""),
+        (type == "secondary" ? styles["CollapseCmp--secondary"] : ""),
+        (type == "last" ? styles["CollapseCmp--last"] : ""),
+      className].join(" ")}>
         <Button onClick={this.toggle} className={styles.CollapseCmp__btn}>
           { title }
           <ArrowFoward className={styles.CollapseCmp__arrow} ariaLabel='>' />

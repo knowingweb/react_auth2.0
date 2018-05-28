@@ -51,7 +51,7 @@
   fill: var(--theme-secondary-gray);
 }
 
-.CollapseCmp--open .CollapseCmp__arrow {
+.CollapseCmp--open > .CollapseCmp__btn .CollapseCmp__arrow {
   transform: rotate(90deg);
 }
 

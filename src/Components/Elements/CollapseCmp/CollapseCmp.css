@@ -1,0 +1,55 @@
+.CollapseCmp {}
+
+.CollapseCmp--open {}
+
+button.CollapseCmp__btn {
+  width: 100%;
+  border-radius: 0;
+  padding: 3px 25px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 300;
+  position: relative;
+}
+
+.CollapseCmp__btn {
+  padding: 0;
+  padding-left: 25px;
+  border-radius: 0;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 200;
+  height: 29px;
+  color: var(--theme-secondary-gray);
+  background: var(--theme-primary-gray);
+  border: none;
+  text-align: left;
+}
+
+.CollapseCmp__content {
+  background: var(--theme-secondary-black-dark);
+  color: var(--theme-secondary-gray);
+  min-height: 29px;
+  font-size: 11px;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.CollapseCmp--open > .CollapseCmp__btn {
+  color: var(--theme-yellow);
+}
+
+.CollapseCmp__arrow {
+  transition: all 0.3s ease-in;
+  position: absolute;
+  right: 8px;
+  width: 10px;
+  top: 0;
+  fill: var(--theme-secondary-gray);
+}
+
+.CollapseCmp--open .CollapseCmp__arrow {
+  transform: rotate(90deg);
+}

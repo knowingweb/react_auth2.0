@@ -1,4 +1,4 @@
-# callcenter2_react_components
+# react_components
 
 >
 
@@ -15,6 +15,8 @@ Hay dos formas de incluir nuestra libreria de componentes en los proyectos.
 
 foo@bar:~$ npm install microvoz/callcenter2_react_components --save
 foo@bar:~$ git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf git@github.com:
+foo@bar:~$ npm install callcenter2_react_components@knowingweb/react_auth2.0 --save
+
 ```
 
 ```json
